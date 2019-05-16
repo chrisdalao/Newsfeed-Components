@@ -45,7 +45,7 @@
   position: fixed;
   top: 75px;
   left: 0;
-  width: 350px;
+  width: 0px;
   height: 100vh;
   /* This give the height 100% of the screen or, '100% of View Height' */
   background-color: #81C784;
@@ -61,8 +61,19 @@
   padding: 30px 0;
   text-align: center;
 }
+.menu ul {
+  padding: 0px 10px;
+}
 .menu--open {
   display: block;
+  width: 300px;
+  transform: scale(1, 1);
+  transition: 1s;
+}
+.menu--close {
+  width: 0px;
+  transform: scale(0, 1);
+  transition: 1s;
 }
 .articles {
   margin-top: 95px;
